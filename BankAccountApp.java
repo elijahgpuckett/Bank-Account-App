@@ -6,8 +6,8 @@ public class BankAccountApp {
         List<Account> accounts = new LinkedList<Account>();
         
         
-        String file = " ";
-        List<String[]> newAccountHolder = utilities.CSV.read(file);
+        String file = "C:\\Users\\OBLIV\\Documents\\Java\\Java Apps\\bankaccountapp\\original.csv";
+        List<String[]> newAccountHolder = Utilities.read(file);
         for (String[] accountHolder : newAccountHolder) {
             String name = accountHolder[0];
             String ssN = accountHolder[1];
